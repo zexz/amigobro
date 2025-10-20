@@ -14,7 +14,8 @@
         "laravel/fortify": "^1.30",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
-        "laravel/wayfinder": "^0.1.9"
+        "laravel/wayfinder": "^0.1.9",
+        "amigo/assistant-router": "*@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -94,5 +95,11 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/assistant-router"
+        }
+    ]
 }

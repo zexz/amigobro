@@ -317,7 +317,7 @@ it('detects delivery info by keyword', function () {
   "repositories": [
     {"type": "path", "url": "packages/assistant-router"}
   ],
-  "require": {"your-vendor/assistant-router": "*@dev"}
+  "require": {"amigo/assistant-router": "*@dev"}
 }
 ```
 3. `composer update`

@@ -1,0 +1,41 @@
+{
+    "name": "amigo/assistant-router",
+    "description": "Intent router for commerce assistants (Laravel package).",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0 || ^11.0 || ^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AssistantRouter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AssistantRouter\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AssistantRouter\\Providers\\AssistantRouterServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "pestphp/pest": "^2.34",
+        "orchestra/testbench": "^9.0"
+    },
+    "scripts": {
+        "test": "pest"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
